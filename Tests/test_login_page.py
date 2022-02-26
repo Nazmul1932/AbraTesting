@@ -3,8 +3,8 @@ from Pages.login_page import Login
 
 class TestLogin:
     base_url = 'https://dev.abraplatform.com/'
-    user_email = 'suriya.disha@brainstation-23.com'
-    user_password = 'Abra@2023'
+    user_email = '************'
+    user_password = '**********'
 
     def test_home_page(self, setup):
         self.driver = setup
