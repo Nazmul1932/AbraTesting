@@ -1,10 +1,11 @@
 from Pages.login_page import Login
+from utilities.readProperties import ReadConfig
 
 
 class TestLogin:
-    base_url = 'https://dev.abraplatform.com/'
-    user_email = 'suriya.disha@brainstation-23.com'
-    user_password = 'Abra@2023'
+    base_url = ReadConfig.get_base_url()
+    user_email = ReadConfig.get_user_email()
+    user_password = ReadConfig.get_user_password()
 
     def test_home_page(self, setup):
         self.driver = setup

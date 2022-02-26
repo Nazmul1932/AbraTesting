@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
 
-
 class Login:
     email_id = 'email'
     password_id = 'password'
